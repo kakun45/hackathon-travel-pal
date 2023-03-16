@@ -1,5 +1,3 @@
-//  <Header />
-//  <Main />
 import Main from "../../components/Main";
 
 

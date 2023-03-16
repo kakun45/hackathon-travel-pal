@@ -1,10 +1,12 @@
 import { useState } from "react"
 import axios from "axios"
-// import { useParams } from "react-router-dom"
+import { Navigate } from "react-router-dom"
 
 
 const Main = () => {
     const [zipcode, setZipcode] = useState('')
+    const [itineraryList, setItineraryList] = useState([])
+    // const 
     // const { zip } = useParams()
 
 
@@ -14,11 +16,15 @@ const Main = () => {
 
     const sumbitZipcode = (e) => {
         e.preventDefault()
-        // console.log(zipcode)
         axios.get(`http://localhost:8000/${zipcode}`)
-            .then(res => console.log(res))
+            .then(res =>
+                setItineraryList(res.data)
+            )
+
             .catch(err => console.log(err))
+
     }
+    // console.log(itineraryList)
 
     return (
         <>

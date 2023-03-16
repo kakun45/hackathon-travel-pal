@@ -1,4 +1,5 @@
 import ItineraryCard from "../components/ItineraryCard/ItineraryCard"
+import './Itinerary.scss'
 
 const Itinerary = ({ itineraryList, setItineraryList }) => {
 

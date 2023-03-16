@@ -1,12 +1,12 @@
 import { useState } from "react"
 import axios from "axios"
-import { Navigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 
 
 const Main = () => {
     const [zipcode, setZipcode] = useState('')
     const [itineraryList, setItineraryList] = useState([])
-    // const 
+    const navigate = useNavigate()
     // const { zip } = useParams()
 
 
@@ -20,9 +20,9 @@ const Main = () => {
             .then(res =>
                 setItineraryList(res.data)
             )
-
             .catch(err => console.log(err))
 
+        navigate('/itinerary')
     }
     // console.log(itineraryList)
 

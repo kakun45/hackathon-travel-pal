@@ -3,9 +3,8 @@ import axios from "axios"
 import { useNavigate } from 'react-router-dom'
 
 
-const Main = () => {
+const Main = (setItineraryList) => {
     const [zipcode, setZipcode] = useState('')
-    const [itineraryList, setItineraryList] = useState([])
     const navigate = useNavigate()
     // const { zip } = useParams()
 
@@ -24,7 +23,6 @@ const Main = () => {
 
         navigate('/itinerary')
     }
-    // console.log(itineraryList)
 
     return (
         <>

@@ -1,6 +1,6 @@
 
 
-const Itinerary = () => {
+const Itinerary = (itineraryList, setItineraryList) => {
     return (
         <h1>Elllo</h1>
     )

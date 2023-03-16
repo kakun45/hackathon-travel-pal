@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background: url(../../assets/vegas.jpeg);
+    width: 100%;
+    display: flex;
+
+    &__title {
+        font-size: 30px;
+        align-items: center;
+    }
+
+    &__image {}
+}
+
+header {
+    background: url(https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg) no-repeat;
+    padding-top: 61.93333333%;
+    background-size: cover;
+}

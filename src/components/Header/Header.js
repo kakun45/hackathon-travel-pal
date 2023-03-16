@@ -1,14 +1,18 @@
 import "./Header.scss";
 
+
 const Header = () => {
     return (
         <header >
             <nav className="header">
-                <div className="header__logo">
+                <div className="header__div">
                     <h1 className="header__title">TRAVEL PAL</h1>
-                    <img src={Logo} alt="header image" className="header__image"></img>
                 </div>
             </nav>
+            <section className="main">
+                <h2 className="main__title">WELCOME TO VEGAS</h2>
+
+            </section>
         </header >
     )
 };

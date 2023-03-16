@@ -11,11 +11,10 @@ const Main = () => {
     const zipcodeHandler = (e) => {
         setZipcode(e.target.value)
     }
-    console.log(zipcode)
 
     const sumbitZipcode = (e) => {
         e.preventDefault()
-        console.log(zipcode)
+        // console.log(zipcode)
         axios.get(`http://localhost:8000/${zipcode}`)
             .then(res => console.log(res))
             .catch(err => console.log(err))

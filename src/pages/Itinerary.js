@@ -2,13 +2,15 @@ import ItineraryCard from "../components/ItineraryCard/ItineraryCard"
 
 const Itinerary = ({ itineraryList, setItineraryList }) => {
 
-    function filtereLOutCards(arrOfObj, eventId) {
-        return arrOfObj.filter((obj) => obj.id === eventId);
-    }
+
+
     return (
 
         itineraryList.map(itinerary => {
-            <ItineraryCard
+            < ItineraryCard
+                setItineraryList={setItineraryList}
+                image={itinerary.image}
+                id={itinerary.id}
                 event={itinerary.event}
                 time={itinerary.time}
                 pplNum={itinerary.attendees} />

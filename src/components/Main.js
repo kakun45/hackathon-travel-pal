@@ -3,10 +3,9 @@ import axios from "axios"
 import { useNavigate } from 'react-router-dom'
 
 
-const Main = (setItineraryList) => {
+const Main = ({ setItineraryList }) => {
     const [zipcode, setZipcode] = useState('')
     const navigate = useNavigate()
-    // const { zip } = useParams()
 
 
     const zipcodeHandler = (e) => {
@@ -20,10 +19,8 @@ const Main = (setItineraryList) => {
                 setItineraryList(res.data)
             )
             .catch(err => console.log(err))
-
         navigate('/itinerary')
     }
-
     return (
         <>
             <form className="form" onSubmit={sumbitZipcode}>
@@ -42,7 +39,8 @@ const Main = (setItineraryList) => {
                     <option value={89108}>89108</option>
                     <option value={89109}>89109</option>
                 </select>
-                <button>Explore</button>
+                {/* <Button value={'Explore'} /> */}
+                <button>sumbit</button>
             </form>
         </>
     )
@@ -50,6 +48,3 @@ const Main = (setItineraryList) => {
 
 export default Main
 
-// cardList.map(card => {
-
-// })

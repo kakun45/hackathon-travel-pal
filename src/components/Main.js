@@ -1,6 +1,7 @@
 import { useState } from "react"
 import axios from "axios"
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import Button from "./Button/Button";
 
 
 const Main = ({ setItineraryList }) => {
@@ -39,8 +40,8 @@ const Main = ({ setItineraryList }) => {
                     <option value={89108}>89108</option>
                     <option value={89109}>89109</option>
                 </select>
-                {/* <Button value={'Explore'} /> */}
-                <button>sumbit</button>
+                <Button value={'Explore'} />
+                {/* <button>sumbit</button> */}
             </form>
         </>
     )

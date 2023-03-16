@@ -1,8 +1,9 @@
+import "./Header.scss";
 
 
 const Header = () => {
     return (
-        <header >
+        <header>
             <nav className="header">
                 <div className="header__div">
                     <h1 className="header__title">TRAVEL PAL</h1>
@@ -17,4 +18,4 @@ const Header = () => {
 };
 
 
-export default Header
+export default Header;

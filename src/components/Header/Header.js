@@ -1,4 +1,3 @@
-import "./Header.scss";
 
 
 const Header = () => {
@@ -17,4 +16,5 @@ const Header = () => {
     )
 };
 
-export default Header;
+
+export default Header

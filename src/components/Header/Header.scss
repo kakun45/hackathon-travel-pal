@@ -8,6 +8,8 @@ header {
     position: absolute;
     top: 0;
     z-index: 10;
+    background-color: white;
+    width: 100%;
 }
 
 .header {
@@ -19,7 +21,7 @@ header {
     z-index: 10;
 
     &__div {
-        height: 15vh;
+        // height: 15vh;
     }
 
     &__title {
@@ -29,6 +31,7 @@ header {
         font-family: 'Titan One';
         padding-left: 30px;
         z-index: 3;
-        padding-top: 30px;
+        position: absolute;
+        padding-top: 3rem;
     }
 }

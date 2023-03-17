@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
@@ -15,7 +18,10 @@ html {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto, Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
     overflow-x: hidden;
 }
 
@@ -31,6 +37,13 @@ button {
     font-size: 1.2rem;
     text-transform: uppercase;
     cursor: pointer;
+    letter-spacing: .05rem;
+    font-family: Roboto,
+        Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+
 }
 
 button a {
@@ -46,11 +59,20 @@ a {
 
 input {
     border-radius: 4px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto,
+        Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+    ;
 }
 
 ::placeholder {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto,
+        Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
 
 }
 

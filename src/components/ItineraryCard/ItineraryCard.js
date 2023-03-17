@@ -1,4 +1,6 @@
 import "./ItineraryCard.scss";
+import Button from "../Button/Button";
+import blackX from '../../assets/images/blackx.png'
 
 const ItineraryCard = ({
   event,
@@ -7,12 +9,16 @@ const ItineraryCard = ({
   id,
   image,
   setItineraryList,
+  itineraryList
 }) => {
-  // function removeEvent(eventId) {
-  //     setItineraryList(preval => preval.filter(preval.id !== eventId))
-  //   }
 
-  // onClick = {() => removeEvent(id)}
+  // set funtion to delete unwanted event
+  function removeEvent(eventId) {
+    let filteredList = itineraryList.filter(event => event.id !== eventId)
+    setItineraryList(filteredList)
+    console.log('clicked')
+  }
+
   console.log(event, time, pplNum, id, image)
 
   return (
@@ -27,8 +33,13 @@ const ItineraryCard = ({
           <li className="card__li data-time">Time: {time}</li>
           <li className="card__li data-event">{event}</li>
           <li className="card__li data-pplNum">{pplNum} ppl are going</li>
+          <li><Button className="card__btn" value={'Message'} /></li>
         </div>
       </ul>
+      <div onClick={() => removeEvent(id)}
+        className="delete-wrapper">
+        <img className="delete__img" src={blackX} />
+      </div>
     </div>
   );
 };

@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Titan+One');
 
 header {
-    position: absolute;
+    // position: absolute;
     top: 0;
     z-index: 10;
     background-color: white;
@@ -29,5 +29,19 @@ header {
         z-index: 3;
         position: absolute;
         padding-top: 3rem;
+        text-shadow: 0 0 3px black, 0 0 5px #0000FF;
+    }
+
+    &__nav {
+        width: 7%;
+        height: 20%;
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    &__div {
+        display: flex;
+        display: block;
     }
 }

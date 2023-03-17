@@ -15,9 +15,9 @@ const Results = ({ itineraryList, setItineraryList }) => {
   const navigate = useNavigate()
 
 
-  function moveToFinalize() {
-    navigate('/final')
 
+  function addMoreZip() {
+    navigate('/')
   }
 
   return (
@@ -36,8 +36,11 @@ const Results = ({ itineraryList, setItineraryList }) => {
           />
         );
       })}
-      <div onClick={moveToFinalize} className="result__btn"><Button value={'Finalize'} /></div>
-    </main>
+      <div className="result__btn">
+        {/* <div onClick={moveToFinalize}> <Button value={'Finalize'} /></div> */}
+        <div onClick={addMoreZip} ><Button value={'More Events'} /></div>
+      </div>
+    </main >
   );
 };
 

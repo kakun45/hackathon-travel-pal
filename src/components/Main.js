@@ -5,7 +5,7 @@ import Button from "./Button/Button";
 import "./Main.scss";
 
 
-const Main = ({ setItineraryList }) => {
+const Main = ({ setItineraryList, itineraryList, setArrLength, arrLength }) => {
     const [zipcode, setZipcode] = useState('')
     const navigate = useNavigate()
 
@@ -14,15 +14,25 @@ const Main = ({ setItineraryList }) => {
         setZipcode(e.target.value)
     }
 
+
     const sumbitZipcode = (e) => {
         e.preventDefault()
         axios.get(`http://localhost:8000/${zipcode}`)
-            .then(res =>
-                setItineraryList(res.data)
+            .then((res) => {
+
+                setArrLength(res.data.length)
+                // console.log(res.data.length);
+
+                setItineraryList([...itineraryList, ...res.data])
+                // setItineraryList(newlist)
+            }
             )
             .catch(err => console.log(err))
         navigate('/itinerary')
     }
+
+    console.log(arrLength);
+
     return (
         <>
             <section className="main">

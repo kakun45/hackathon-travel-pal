@@ -1,5 +1,5 @@
 import "./resultsPage.scss";
-import fakeImg from '../assets/images/vegasMain.jpg'
+import fakeImg from "../assets/images/vegasMain.jpg";
 import ItineraryCard from "../components/ItineraryCard/ItineraryCard";
 
 // const listJson = [
@@ -192,24 +192,29 @@ const Results = ({ itineraryList, setItineraryList }) => {
   //     </div>
   //   );
   // });
-  console.log(itineraryList)
-
+  function toLocaleTimeString(timestamp) {
+    let date = new Date(timestamp * 1000);
+    return date.toLocaleTimeString("default");
+  }
+  console.log(itineraryList);
+  // todo fix sort here before mapping
   return (
     <main className="result">
-      {itineraryList.map(itinerary => {
-
-        return <ItineraryCard
-
-          setItineraryList={setItineraryList}
-          image={itinerary.image}
-          id={itinerary.id}
-          event={itinerary.event}
-          time={itinerary.time}
-          pplNum={itinerary.attendees}
-        />
+      {itineraryList.sort().map((itinerary) => {
+        return (
+          <ItineraryCard
+            key={itinerary.id}
+            setItineraryList={setItineraryList}
+            image={itinerary.image}
+            id={itinerary.id}
+            event={itinerary.event}
+            time={toLocaleTimeString(itinerary.time)}
+            pplNum={itinerary.attendees}
+          />
+        );
       })}
     </main>
-  )
+  );
 };
 
 export default Results;

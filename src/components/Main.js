@@ -2,7 +2,7 @@ import { useState } from "react"
 import axios from "axios"
 import { useNavigate } from 'react-router-dom';
 import Button from "./Button/Button";
-import "./Main.scss"; import Button from "./Button/Button"
+import "./Main.scss";
 
 
 const Main = ({ setItineraryList }) => {
@@ -25,6 +25,11 @@ const Main = ({ setItineraryList }) => {
     }
     return (
         <>
+            <section className="main">
+                <div className="main__div">
+                    <h2 className="main__title">WELCOME TO VEGAS</h2>
+                </div>
+            </section>
             <form className="form" onSubmit={sumbitZipcode}>
                 <label htmlFor="form__zipcode" className="form__title">Select your Zipcode</label>
                 <select

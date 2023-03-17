@@ -4,11 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Titan+One');
 
-body {
-    background: url(../../assets/images/vegas.jpeg);
-    background-size: 100%;
-    // opacity: 60%;
-}
+// body {
+//     background: url(../../assets/images/vegas.jpeg);
+//     background-size: 100%;
+//     // opacity: 60%;
+// }
 
 .header {
     position: absolute;
@@ -18,11 +18,12 @@ body {
     display: flex;
 
     &__title {
-        font-size: 1.2rem;
+        font-size: 2rem;
         align-items: left;
         color: white;
         font-family: 'Titan One';
         padding-left: 30px;
+        margin-top: 20px;
     }
 }
 
@@ -103,7 +104,6 @@ body {
     }
 
     &__link {
-        text-decoration: none;
         display: inline;
         justify-content: flex-end;
         color: white;

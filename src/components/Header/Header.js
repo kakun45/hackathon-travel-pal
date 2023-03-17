@@ -1,12 +1,15 @@
 import "./Header.scss";
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
     return (
         <header>
-            <div className="header__div">
-                <h1 className="header__title">TRAVEL PAL</h1>
-            </div>
+            <Link to='/'>
+                <div className="header__div">
+                    <h1 className="header__title">TRAVEL PAL</h1>
+                </div>
+            </Link>
         </header >
     )
 };

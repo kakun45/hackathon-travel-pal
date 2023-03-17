@@ -26,30 +26,28 @@ const Main = ({ setItineraryList }) => {
     return (
         <>
             <section className="main">
-                <div className="main__div">
-                    <h2 className="main__title">WELCOME TO VEGAS</h2>
-                </div>
+                <h2 className="main__title">WELCOME TO VEGAS</h2>
+                <form className="form" onSubmit={sumbitZipcode}>
+                    <label htmlFor="form__zipcode" className="form__title">Select your Zipcode</label>
+                    <select
+                        name="zipcode"
+                        placeholder="Zipcode"
+                        id="zipcode"
+                        className="form__zipcode"
+                        value={zipcode}
+                        onChange={zipcodeHandler}>
+                        <option value=''>Zipcode</option>
+                        <option value={89104}>89104</option>
+                        <option value={89101}>89101</option>
+                        <option value={89183}>89183</option>
+                        <option value={89108}>89108</option>
+                        <option value={89109}>89109</option>
+                    </select>
+                    <div className="button">
+                        <Button value={'EXPLORE'} />
+                    </div>
+                </form>
             </section>
-            <form className="form" onSubmit={sumbitZipcode}>
-                <label htmlFor="form__zipcode" className="form__title">Select your Zipcode</label>
-                <select
-                    placeholder="Zipcode"
-                    id="zipcode"
-                    name="zipcode"
-                    className="form__zipcode"
-                    value={zipcode}
-                    onChange={zipcodeHandler}>
-                    <option value=''>Zipcode</option>
-                    <option value={89104}>89104</option>
-                    <option value={89101}>89101</option>
-                    <option value={89183}>89183</option>
-                    <option value={89108}>89108</option>
-                    <option value={89109}>89109</option>
-                </select>
-                <div className="button">
-                    <Button value={'EXPLORE'} />
-                </div>
-            </form>
         </>
     )
 }

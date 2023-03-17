@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Titan+One');
 
 header {
-    // position: absolute;
+    position: absolute;
     top: 0;
     z-index: 10;
     background-color: white;
@@ -39,12 +39,17 @@ header {
         margin-top: 20px;
         margin-right: 20px;
     }
-<<<<<<< HEAD
-=======
 
     &__div {
         display: flex;
         display: block;
     }
->>>>>>> feature/alexa
+
+    &__nav {
+        width: 7%;
+        height: 20%;
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
 }

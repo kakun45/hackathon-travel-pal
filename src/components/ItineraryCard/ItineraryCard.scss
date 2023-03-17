@@ -1,12 +1,18 @@
 .card {
-    margin-bottom: 2rem;
+    &-container {
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+
 
     &-container,
     &__data,
     &__img-parent {
         width: 80vw;
-        margin: 0 auto;
+        margin: 2rem auto;
         border-radius: 4px;
+        height: 30rem;
     }
 
     &__img-parent {
@@ -17,7 +23,7 @@
         width: 100%;
         z-index: 1;
         border-radius: 5px;
-
+        height: 30rem;
     }
 
     &__overlay {
@@ -48,13 +54,37 @@
     }
 
     &__li {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 500;
         border: 2px solid white;
-        padding: 1.5rem;
+        padding: 1.2rem;
         margin-bottom: 1rem;
         background-color: white;
-        opacity: .7;
+        opacity: .85;
         border-radius: 5px;
     }
+
+    &__btn {
+        padding: 1rem;
+    }
 }
+
+.delete {
+    &-wrapper {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        opacity: .80;
+        background-color: rgb(103, 63, 215);
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.423);
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+// background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);

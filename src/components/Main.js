@@ -26,15 +26,13 @@ const Main = ({ setItineraryList }) => {
     return (
         <>
             <section className="main">
-                <div className="main__div">
-                    <h2 className="main__title">WELCOME TO VEGAS</h2>
-                </div>
+                <h2 className="main__title">WELCOME TO VEGAS</h2>
                 <form className="form" onSubmit={sumbitZipcode}>
                     <label htmlFor="form__zipcode" className="form__title">Select your Zipcode</label>
                     <select
+                        name="zipcode"
                         placeholder="Zipcode"
                         id="zipcode"
-                        name="zipcode"
                         className="form__zipcode"
                         value={zipcode}
                         onChange={zipcodeHandler}>

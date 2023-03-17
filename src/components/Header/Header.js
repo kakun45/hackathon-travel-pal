@@ -10,8 +10,6 @@ const Header = () => {
                     <h1 className="header__title">TRAVEL PAL</h1>
                     <img src={Nav} alt="nav" className="header__nav"></img>
                 </div>
-                {/* <img src={Search} alt="nav" className="header__nav"></img> */}
-
             </Link>
         </header >
     )

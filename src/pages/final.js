@@ -1,7 +1,12 @@
-import './final.scss'
+import './final.scss';
+import ItineraryCard from '../components/ItineraryCard/ItineraryCard';
 
 function Final() {
-    return (<></>)
+
+    return (<>
+
+
+    </>)
 }
 
-export default Final
+export default Final;

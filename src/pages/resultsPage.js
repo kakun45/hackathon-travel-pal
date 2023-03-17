@@ -1,4 +1,4 @@
-import ".pages/resultsPage.scss";
+import "./resultsPage.scss";
 import ItineraryCard from "../components/ItineraryCard/ItineraryCard";
 
 const listJson = [

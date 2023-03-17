@@ -1,5 +1,4 @@
 import "./resultsPage.scss";
-import fakeImg from "../assets/images/vegasMain.jpg";
 import ItineraryCard from "../components/ItineraryCard/ItineraryCard";
 import Button from "../components/Button/Button";
 import { useNavigate } from 'react-router-dom';
@@ -34,7 +33,7 @@ const Results = ({ itineraryList, setItineraryList }) => {
             time={toLocaleTimeString(itinerary.time)}
             pplNum={itinerary.attendees}
             itineraryList={itineraryList}
-        />
+          />
         );
       })}
       <div onClick={moveToFinalize} className="result__btn"><Button value={'Finalize'} /></div>

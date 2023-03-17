@@ -45,7 +45,7 @@
 
     &--li-wrapper {
         position: absolute;
-        top: 50%;
+        top: 42%;
         transform: translateY(-50%);
         text-align: center;
         margin-top: 5%;
@@ -63,8 +63,23 @@
         border-radius: 5px;
     }
 
-    &__btn {
+    &__buttons {
+        display: flex;
+        position: absolute;
+        top: 85%;
+        transform: translateY(-50%);
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    &__btn--msg {
         padding: 1rem;
+        width: 20%;
+    }
+
+    &__btn--join {
+        padding: 1rem;
+        width: 20%;
     }
 }
 

@@ -8,13 +8,16 @@ const Itinerary = ({ itineraryList, setItineraryList }) => {
     return (
 
         itineraryList.map(itinerary => {
-            < ItineraryCard
+            return (
+              <ItineraryCard
                 setItineraryList={setItineraryList}
                 image={itinerary.image}
                 id={itinerary.id}
                 event={itinerary.event}
                 time={itinerary.time}
-                pplNum={itinerary.attendees} />
+                pplNum={itinerary.attendees}
+              />
+            );
         })
     )
 }

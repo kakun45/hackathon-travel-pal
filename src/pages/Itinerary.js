@@ -7,22 +7,29 @@ import five from '../assets/images/five.png'
 import one from '../assets/images/one.png'
 import Button from "../components/Button/Button"
 import { useNavigate } from 'react-router-dom';
+import { useRef } from "react"
 
 
-const Itinerary = ({ itineraryList, setItineraryList }) => {
+const Itinerary = ({ itineraryList, setItineraryList, arrLength }) => {
     // set navigate
     const navigate = useNavigate()
+
+    const preLength = useRef()
 
     // set btn handler not working
     const sendResult = () => {
         navigate('/results')
     }
-    // console.log(itineraryList)
+    console.log()
+    // Object.keys
     return (
-
         <main className="itinerary">
             <div className="itinerary__circle"></div>
-            <div className="itinerary__nearYou">You have {itineraryList.length || 0} {`${itineraryList.length > 1 ? 'events' : 'event'}`} near you</div>
+            <div className="itinerary__nearYou">You have {
+
+                arrLength || 0} {`${arrLength ? ' events' : ' event'}`}
+                near you</div>
+
             <img className="itinerary__pin"
                 src={itineraryList.length === 2 ? two
                     : itineraryList.length === 3 ? three
@@ -30,15 +37,7 @@ const Itinerary = ({ itineraryList, setItineraryList }) => {
                             : itineraryList.length === 5 ? five
                                 : one}
                 alt="pinpoint" />
-            {/* {itineraryList.map(itinerary => {
-                < ItineraryCard
-                    setItineraryList={setItineraryList}
-                    image={itinerary.image}
-                    id={itinerary.id}
-                    event={itinerary.event}
-                    time={itinerary.time}
-                    pplNum={itinerary.attendees} />
-            })} */}
+
             <div className="itinerary__btn" onClick={sendResult}><Button className="itinerary__btn" value={'Explore'} /></div>
         </main>
 

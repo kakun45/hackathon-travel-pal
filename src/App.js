@@ -11,6 +11,7 @@ import Final from './pages/final';
 
 function App() {
   const [itineraryList, setItineraryList] = useState([]);
+  const [arrLength, setArrLength] = useState(0)
 
   return (
     <BrowserRouter>
@@ -18,7 +19,7 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Main setItineraryList={setItineraryList} />}
+          element={<Main setItineraryList={setItineraryList} itineraryList={itineraryList} setArrLength={setArrLength} arrLength={arrLength} />}
         />
 
         <Route
@@ -27,6 +28,9 @@ function App() {
             <Itinerary
               setItineraryList={setItineraryList}
               itineraryList={itineraryList}
+              arrLength={arrLength}
+              setArrLength={setArrLength}
+
             />
           }
         />

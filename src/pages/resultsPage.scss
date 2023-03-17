@@ -2,16 +2,15 @@
   list-style-type: none;
 }
 
-.result {
-  background-image: linear-gradient(rgba(152, 148, 148, 0.7), rgba(152, 148, 148, 0.7)), url('../assets/images/welcome.jpg');
-  background-size: contain;
-  background-position: center;
-}
+// .result {
+//   background-image: linear-gradient(rgba(152, 148, 148, 0.7), rgba(152, 148, 148, 0.7)), url('../assets/images/welcome.jpg');
+//   background-size: contain;
+//   background-position: center;
+// }
 
 .result__btn {
-  margin: 4rem 0;
-  padding-right: 2rem;
+  margin: 6rem 0 4rem 0;
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: space-around;
 }

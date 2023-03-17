@@ -1,5 +1,4 @@
 import "./resultsPage.scss";
-import fakeImg from "../assets/images/vegasMain.jpg";
 import ItineraryCard from "../components/ItineraryCard/ItineraryCard";
 import Button from "../components/Button/Button";
 import { useNavigate } from "react-router-dom";
@@ -14,8 +13,9 @@ const Results = ({ itineraryList, setItineraryList }) => {
   // todo fix sort here before mapping
   const navigate = useNavigate();
 
-  function moveToFinalize() {
-    navigate("/final");
+
+  function addMoreZip() {
+    navigate('/')
   }
 
   return (
@@ -34,10 +34,11 @@ const Results = ({ itineraryList, setItineraryList }) => {
           />
         );
       })}
-      <div onClick={moveToFinalize} className="result__btn">
-        <Button value={"Finalize"} />
+      <div className="result__btn">
+        {/* <div onClick={moveToFinalize}> <Button value={'Finalize'} /></div> */}
+        <div onClick={addMoreZip} ><Button value={'More Events'} /></div>
       </div>
-    </main>
+    </main >
   );
 };
 

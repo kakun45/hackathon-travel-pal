@@ -33,7 +33,10 @@ const ItineraryCard = ({
           <li className="card__li data-time">Time: {time}</li>
           <li className="card__li data-event">{event}</li>
           <li className="card__li data-pplNum">{pplNum} ppl are going</li>
-          <li><Button className="card__btn" value={'Message'} /></li>
+        </div>
+        <div className="card__buttons">
+          <li><Button className="card__btn--msg" value={'Message'} /></li>
+          <li><Button className="card__btn--join" value={'Click to Join'} /></li>
         </div>
       </ul>
       <div onClick={() => removeEvent(id)}

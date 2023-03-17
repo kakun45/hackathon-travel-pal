@@ -16,11 +16,11 @@ const Header = () => {
                     </ul>
                 </div> */}
             </nav>
-            <section className="main">
+            {/* <section className="main">
                 <div className="main__div">
                     <h2 className="main__title">WELCOME TO VEGAS</h2>
                 </div>
-            </section>
+            </section> */}
         </header >
     )
 };

@@ -27,7 +27,7 @@ const Itinerary = ({ itineraryList, setItineraryList, arrLength }) => {
             <div className="itinerary__circle"></div>
             <div className="itinerary__nearYou">You have {
 
-                arrLength || 0} {`${arrLength ? ' events' : ' event'}`}
+                arrLength || 0} {`${arrLength ? ' events ' : ' event '}`}
                 near you</div>
 
             <img className="itinerary__pin"

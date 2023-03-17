@@ -37,11 +37,20 @@
 
     &__pin {
         height: 7rem;
-        width: 7rem;
+        width: 10rem;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 40%;
         z-index: 10;
+        object-fit: contain;
+    }
+
+    &__btn {
+        position: absolute;
+        z-index: 10;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

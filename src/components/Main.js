@@ -1,14 +1,9 @@
 import { useState } from "react"
 import axios from "axios"
-<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
 import Button from "./Button/Button";
-import "./Main.scss";
-=======
-import { useNavigate } from 'react-router-dom'
-import Button from "./Button/Button"
+import "./Main.scss"; import Button from "./Button/Button"
 
->>>>>>> 71f8bb8f01a61bbe5b263e963e013de18f633346
 
 const Main = ({ setItineraryList }) => {
     const [zipcode, setZipcode] = useState('')
@@ -31,7 +26,7 @@ const Main = ({ setItineraryList }) => {
     return (
         <>
             <form className="form" onSubmit={sumbitZipcode}>
-                <label htmlFor="zipcode" className="form__title">Select your Zipcode</label>
+                <label htmlFor="form__zipcode" className="form__title">Select your Zipcode</label>
                 <select
                     placeholder="Zipcode"
                     id="zipcode"
@@ -46,13 +41,9 @@ const Main = ({ setItineraryList }) => {
                     <option value={89108}>89108</option>
                     <option value={89109}>89109</option>
                 </select>
-<<<<<<< HEAD
                 <div className="button">
                     <Button value={'EXPLORE'} />
                 </div>
-=======
-                <Button value={'Explore'} />
->>>>>>> 71f8bb8f01a61bbe5b263e963e013de18f633346
             </form>
         </>
     )

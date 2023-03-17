@@ -198,7 +198,7 @@ const Results = ({ itineraryList, setItineraryList }) => {
     <main className="result">
       {itineraryList.map(itinerary => {
 
-        <ItineraryCard
+        return <ItineraryCard
 
           setItineraryList={setItineraryList}
           image={itinerary.image}

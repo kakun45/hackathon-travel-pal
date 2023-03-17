@@ -1,0 +1,24 @@
+.button {
+    text-align: center;
+    padding-top: 10%;
+}
+
+select {
+    color: #9e9e9e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin-top: 25%;
+    margin-left: 15%;
+}
+
+option:not(:first-of-type) {
+    color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form {
+    &__title {
+        color: white;
+        position: relative;
+    }
+}

@@ -2,22 +2,110 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
 body {
     background: url(../../assets/images/vegas.jpeg);
-    opacity: 80%;
+    background-size: 100%;
+    // opacity: 60%;
 }
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
-    background-color: lightblue;
-    opacity: 80%;
-
 
     &__title {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         align-items: left;
-        color: black;
-        // width: 80%;
+        color: white;
+        font-family: 'Titan One';
+        padding-left: 30px;
+    }
+}
+
+.main {
+    text-align: center;
+
+    &__title {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        animation: 2s anim-popoutin ease infinite;
+    }
+
+    @keyframes anim-popoutin {
+        0% {
+            color: white;
+            transform: scale(0);
+            opacity: 0;
+            text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        25% {
+            color: lightblue;
+            transform: scale(2);
+            opacity: 1;
+            text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        50% {
+            color: white;
+            transform: scale(1);
+            opacity: 1;
+            text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+        }
+
+        100% {
+            /* animate nothing to add pause at the end of animation */
+            transform: scale(1);
+            opacity: 1;
+            text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+        }
+    }
+
+    .fromtop {
+        animation: 2s anim-fromtop linear infinite;
+    }
+
+    @keyframes anim-fromtop {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        25% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+
+        50% {}
+
+        100% {}
+    }
+
+    &__div {
+        margin-top: 100px;
+    }
+}
+
+.navigation {
+    &__links--section {
+        list-style: none;
+        margin-left: auto;
+        margin-right: 140px;
+        padding-top: 5px;
+    }
+
+    &__tool {
+        margin: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: inline;
+        justify-content: flex-end;
+        color: white;
     }
 }

@@ -1,17 +1,33 @@
-import './ItineraryCard.scss'
+import "./ItineraryCard.scss";
 
-const ItineraryCard = ({ event, time, pplNum, id, image, setItineraryList }) => {
+const ItineraryCard = ({
+  event,
+  time,
+  pplNum,
+  id,
+  image,
+  setItineraryList,
+}) => {
+  // function removeEvent(eventId) {
+  //     setItineraryList(preval => preval.filter(preval.id !== eventId))
+  //   }
 
-    // function removeEvent(eventId) {
-    //     setItineraryList(preval => preval.filter(preval.id !== eventId))
-    // }
+  // onClick = {() => removeEvent(id)}
 
-    // onClick = {() => removeEvent(id)}
+  return (
+    <>
+      <div className="card-container">
+        <ul className="card__data">
+          <div className="card__img-parent">
+            <img className="card__img" src={image} alt="vegas location"></img>
+          </div>
+          <li className="data-time">Time: {time}</li>
+          <li className="data-event">Event: {event}</li>
+          <li className="data-pplNum">Group size: {pplNum}</li>
+        </ul>
+      </div>
+    </>
+  );
+};
 
-
-    return (
-        <></>
-    )
-}
-
-export default ItineraryCard
+export default ItineraryCard;

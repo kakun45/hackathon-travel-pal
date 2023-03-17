@@ -2,23 +2,20 @@ import "./resultsPage.scss";
 import fakeImg from "../assets/images/vegasMain.jpg";
 import ItineraryCard from "../components/ItineraryCard/ItineraryCard";
 import Button from "../components/Button/Button";
-import { useNavigate } from 'react-router-dom';
-
-
+import { useNavigate } from "react-router-dom";
 
 const Results = ({ itineraryList, setItineraryList }) => {
   function toLocaleTimeString(timestamp) {
     let date = new Date(timestamp * 1000);
-    return date.toLocaleTimeString("default");
+    // let time2 = date.toLocaleTimeString().replace(/(.*)\D\d+/, "$1");
+    return date.toLocaleTimeString().replace(/(.*)\D\d+/, "$1");
   }
   console.log(itineraryList);
   // todo fix sort here before mapping
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
 
   function moveToFinalize() {
-    navigate('/final')
-
+    navigate("/final");
   }
 
   return (
@@ -34,10 +31,12 @@ const Results = ({ itineraryList, setItineraryList }) => {
             time={toLocaleTimeString(itinerary.time)}
             pplNum={itinerary.attendees}
             itineraryList={itineraryList}
-        />
+          />
         );
       })}
-      <div onClick={moveToFinalize} className="result__btn"><Button value={'Finalize'} /></div>
+      <div onClick={moveToFinalize} className="result__btn">
+        <Button value={"Finalize"} />
+      </div>
     </main>
   );
 };

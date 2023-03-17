@@ -2,7 +2,7 @@ import { useState } from "react"
 import axios from "axios"
 import { useNavigate } from 'react-router-dom';
 import Button from "./Button/Button";
-import "./Main.scss"; import Button from "./Button/Button"
+import "./Main.scss";
 
 
 const Main = ({ setItineraryList }) => {

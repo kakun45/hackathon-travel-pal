@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Itinerary from "./pages/Itinerary";
 import { useState } from "react";
 import Results from "./pages/resultsPage";
+import Final from './pages/final';
 
 function App() {
   const [itineraryList, setItineraryList] = useState([]);
@@ -31,6 +32,10 @@ function App() {
         />
         <Route path="/results" element={<Results
           itineraryList={itineraryList} setItineraryList={setItineraryList} />} />
+
+        <Route path="/final" element={<Final
+          itineraryList={itineraryList} setItineraryList={setItineraryList} />} />
+
       </Routes>
     </BrowserRouter>
   );

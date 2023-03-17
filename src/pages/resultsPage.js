@@ -13,7 +13,6 @@ const Results = ({ itineraryList, setItineraryList }) => {
   // todo fix sort here before mapping
   const navigate = useNavigate();
 
-
   function addMoreZip() {
     navigate('/')
   }

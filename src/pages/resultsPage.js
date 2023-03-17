@@ -1,11 +1,20 @@
 import "./resultsPage.scss";
 import ItineraryCard from "../components/ItineraryCard/ItineraryCard";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 import Button from "../components/Button/Button";
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Results = ({ itineraryList, setItineraryList }) => {
   console.log(itineraryList)
+
+  const navigate = useNavigate()
+
+
+  function moveToFinalize() {
+    navigate('/final')
+
+  }
 
   return (
     <main className="result">
@@ -24,7 +33,7 @@ const Results = ({ itineraryList, setItineraryList }) => {
 
         />
       })}
-      <div className="result__btn"><Button value={'Finalize'} /></div>
+      <div onClick={moveToFinalize} className="result__btn"><Button value={'Finalize'} /></div>
     </main>
   )
 };

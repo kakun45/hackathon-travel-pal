@@ -1,6 +1,7 @@
 import "./resultsPage.scss";
 import fakeImg from '../assets/images/vegasMain.jpg'
 import ItineraryCard from "../components/ItineraryCard/ItineraryCard";
+import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 // const listJson = [
 //   {
@@ -206,6 +207,9 @@ const Results = ({ itineraryList, setItineraryList }) => {
           event={itinerary.event}
           time={itinerary.time}
           pplNum={itinerary.attendees}
+          key={itinerary.id}
+          itineraryList={itineraryList}
+
         />
       })}
     </main>

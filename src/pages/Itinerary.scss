@@ -5,7 +5,6 @@
     background-size: contain;
     opacity: .9;
     position: relative;
-    z-index: -1;
 
     &__circle {
         background-color: white;
@@ -48,7 +47,7 @@
 
     &__btn {
         position: absolute;
-        z-index: 10;
+        z-index: 12;
         top: 60%;
         left: 50%;
         transform: translateX(-50%);

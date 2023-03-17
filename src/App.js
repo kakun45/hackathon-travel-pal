@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import './App.scss';
 import './styles/global.scss'
-import Button from './components/Button/Button';
 import Main from "./components/Main";
 import Header from "./components/Header/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -20,6 +19,7 @@ function App() {
           path="/"
           element={<Main setItineraryList={setItineraryList} />}
         />
+
         <Route
           path="/itinerary"
           element={
@@ -29,7 +29,8 @@ function App() {
             />
           }
         />
-        <Route path="/results" element={<Results />} />
+        <Route path="/results" element={<Results
+          itineraryList={itineraryList} setItineraryList={setItineraryList} />} />
       </Routes>
     </BrowserRouter>
   );

@@ -24,7 +24,14 @@ option:not(:first-of-type) {
 }
 
 .main {
+    background-image: url(../assets/images/vegas.jpeg);
+    background-size: 100%;
+    object-fit: cover;
     text-align: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
 
     &__title {
         color: white;

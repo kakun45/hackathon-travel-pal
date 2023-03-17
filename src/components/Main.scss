@@ -8,7 +8,6 @@
 }
 
 body {
-    // background: url(../assets/images/vegas.jpeg);
     background-size: 100%;
 }
 
@@ -37,6 +36,7 @@ option:not(:first-of-type) {
 
 .main {
     background: url(../assets/images/vegas.jpeg);
+    opacity: 90%;
     background-size: 100%;
     object-fit: cover;
     text-align: center;

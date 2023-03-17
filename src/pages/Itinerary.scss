@@ -1,0 +1,47 @@
+.itinerary {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/images/vegasCartoon.png');
+    background-size: contain;
+    opacity: .9;
+    position: relative;
+    z-index: -1;
+
+    &__circle {
+        background-color: white;
+        width: 50rem;
+        height: 50rem;
+        opacity: .5;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 20%;
+        z-index: 2;
+    }
+
+    &__nearYou {
+        width: 20rem;
+        height: 5rem;
+        font-size: 2.2rem;
+        z-index: 3;
+        // background-color: white;
+        text-align: center;
+        color: black;
+        font-weight: 700;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+    }
+
+    &__pin {
+        height: 7rem;
+        width: 7rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 40%;
+        z-index: 10;
+    }
+}

@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 const Results = ({ itineraryList, setItineraryList }) => {
   function toLocaleTimeString(timestamp) {
     let date = new Date(timestamp * 1000);
-    // let time2 = date.toLocaleTimeString().replace(/(.*)\D\d+/, "$1");
     return date.toLocaleTimeString().replace(/(.*)\D\d+/, "$1");
   }
   console.log(itineraryList);

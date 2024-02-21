@@ -1,17 +1,16 @@
-// import logo from './logo.svg';
 import './App.scss';
-import './styles/global.scss'
+import './styles/global.scss';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import Main from "./components/Main";
 import Header from "./components/Header/Header";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Itinerary from "./pages/Itinerary";
-import { useState } from "react";
 import Results from "./pages/resultsPage";
 import Final from './pages/final';
 
 function App() {
   const [itineraryList, setItineraryList] = useState([]);
-  const [arrLength, setArrLength] = useState(0)
+  const [arrLength, setArrLength] = useState(0);
 
   return (
     <BrowserRouter>
@@ -19,7 +18,12 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Main setItineraryList={setItineraryList} itineraryList={itineraryList} setArrLength={setArrLength} arrLength={arrLength} />}
+          element={
+          <Main 
+            setItineraryList={setItineraryList} 
+            itineraryList={itineraryList} 
+            setArrLength={setArrLength} 
+            arrLength={arrLength} />}
         />
 
         <Route
@@ -30,7 +34,6 @@ function App() {
               itineraryList={itineraryList}
               arrLength={arrLength}
               setArrLength={setArrLength}
-
             />
           }
         />

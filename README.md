@@ -1,5 +1,29 @@
-# Getting Started with Create React App
+# Hackathon (Team of 3 SWE)
+## Requirements: 
+- React 
+- Node, Express, data handling [Backend repo](https://github.com/kakun45/hackathon-travelPal-Back)
+  
+# Idea: Traveling alone to a fun place and want to hang out and meet new friends?
+Travel Pal is your go-to platform for solo travelers looking to connect with like-minded individuals and make new friends while exploring exciting destinations. Whether you're embarking on a solo adventure or seeking companionship for local hangouts, Travel Pal is here to make your journey unforgettable. Join us and discover a world of fun and friendship!
+# Our Team
+![The Team](https://github.com/kakun45/hackathon-travelPal-front/assets/53381916/9d1cdddc-8de7-4f06-93bf-e74445f5db5c)
 
+https://github.com/kakun45/hackathon-travelPal-front/assets/53381916/d91ec352-6a4c-4892-8abb-93c9f31306d1
+
+
+# Landing Page
+![Landing Page](https://github.com/kakun45/hackathon-travelPal-front/assets/53381916/5cc47bdc-48f6-455a-bb35-12aea331c0e2)
+
+- Dropdown to Select a zip code
+
+   > -  ![Dropdown to Select a zip code](https://github.com/kakun45/hackathon-travelPal-front/assets/53381916/45def78d-c9a9-4fec-a329-fa235b863cf9)
+
+# Select the Iternanrary Activities page 
+- Close the window 
+- Message/Join are not implemented due to the timeout of the event
+![Select the Iternanrary Activities page](https://github.com/kakun45/hackathon-travelPal-front/assets/53381916/f6b454ef-97bf-48d4-8dc4-fb5f4b885d34)
+____
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
